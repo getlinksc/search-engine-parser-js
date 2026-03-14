@@ -1,0 +1,29 @@
+{
+  "name": "search-engine-scraper",
+  "version": "1.0.0",
+  "description": "Parse search engine HTML results into structured JSON or Markdown",
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "files": ["dist"],
+  "scripts": {
+    "build": "tsc",
+    "test": "jest",
+    "test:coverage": "jest --coverage"
+  },
+  "keywords": ["search", "parser", "scraper", "google", "bing", "duckduckgo", "html"],
+  "license": "MIT",
+  "engines": {
+    "node": ">=18"
+  },
+  "dependencies": {
+    "cheerio": "^1.2.0",
+    "turndown": "^7.2.2"
+  },
+  "devDependencies": {
+    "@types/jest": "^30.0.0",
+    "@types/turndown": "^5.0.6",
+    "jest": "^30.3.0",
+    "ts-jest": "^29.4.6",
+    "typescript": "^5.5.3"
+  }
+}
