@@ -1,11 +1,11 @@
 import * as fs from "fs";
 import * as path from "path";
 import { GoogleParser } from "../../src/parsers/google";
-import { SearchEngineScraper } from "../../src/scraper";
+import { SearchEngineParser } from "../../src/scraper";
 
 const fixturesDir = path.join(__dirname, "..", "fixtures");
 const parser = new GoogleParser();
-const scraper = new SearchEngineScraper();
+const scraper = new SearchEngineParser();
 
 describe("edge cases", () => {
   describe("need_turn_on_javascript.html", () => {

@@ -1,4 +1,4 @@
-export { SearchEngineScraper } from "./scraper";
+export { SearchEngineParser } from "./scraper";
 export { detect, getParserForEngine } from "./detector";
 export { GoogleParser } from "./parsers/google";
 export { BingParser } from "./parsers/bing";

@@ -3,7 +3,7 @@ import { formatJSON } from "./formatters/json";
 import { formatMarkdown } from "./formatters/markdown";
 import type { OutputFormat, EngineName, SearchResults } from "./types";
 
-export class SearchEngineScraper {
+export class SearchEngineParser {
   parse(
     html: string,
     options?: { engine?: EngineName; outputFormat?: OutputFormat }

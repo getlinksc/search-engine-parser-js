@@ -1,8 +1,8 @@
 import * as fs from "fs";
 import * as path from "path";
-import { SearchEngineScraper } from "../../src/scraper";
+import { SearchEngineParser } from "../../src/scraper";
 
-const scraper = new SearchEngineScraper();
+const scraper = new SearchEngineParser();
 const fixturesDir = path.join(__dirname, "..", "fixtures");
 
 function loadFixture(engine: string, file: string): string {

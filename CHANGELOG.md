@@ -2,7 +2,7 @@
 
 ## [0.0.1] - 2026-03-14
 
-Initial release of `search-engine-scraper`.
+Initial release of `search-engine-parser`.
 
 ### Features
 
@@ -17,7 +17,7 @@ Initial release of `search-engine-scraper`.
 ### API
 
 ```typescript
-const scraper = new SearchEngineScraper();
+const scraper = new SearchEngineParser();
 
 scraper.parse(html);                              // JSON (default)
 scraper.parse(html, { outputFormat: "markdown" }) // Markdown

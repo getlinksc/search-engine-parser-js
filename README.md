@@ -1,10 +1,10 @@
-# search-engine-scraper
+# search-engine-parser
 
-[![Tests](https://github.com/getlinksc/search-engine-scraper/workflows/Tests/badge.svg)](https://github.com/getlinksc/search-engine-scraper/actions?query=workflow%3ATests)
-[![codecov](https://codecov.io/gh/getlinksc/search-engine-scraper/branch/main/graph/badge.svg)](https://codecov.io/gh/getlinksc/search-engine-scraper)
-[![npm version](https://img.shields.io/npm/v/search-engine-scraper.svg)](https://www.npmjs.com/package/search-engine-scraper)
-[![npm downloads](https://img.shields.io/npm/dm/search-engine-scraper.svg)](https://www.npmjs.com/package/search-engine-scraper)
-[![Node.js](https://img.shields.io/node/v/search-engine-scraper.svg)](https://nodejs.org)
+[![Tests](https://github.com/getlinksc/search-engine-parser/workflows/Tests/badge.svg)](https://github.com/getlinksc/search-engine-parser/actions?query=workflow%3ATests)
+[![codecov](https://codecov.io/gh/getlinksc/search-engine-parser/branch/main/graph/badge.svg)](https://codecov.io/gh/getlinksc/search-engine-parser)
+[![npm version](https://img.shields.io/npm/v/search-engine-parser.svg)](https://www.npmjs.com/package/search-engine-parser)
+[![npm downloads](https://img.shields.io/npm/dm/search-engine-parser.svg)](https://www.npmjs.com/package/search-engine-parser)
+[![Node.js](https://img.shields.io/node/v/search-engine-parser.svg)](https://nodejs.org)
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 
 Parse search engine HTML results into structured **JSON** or **Markdown**. Auto-detects Google, Bing, and DuckDuckGo.
@@ -14,15 +14,15 @@ Parse search engine HTML results into structured **JSON** or **Markdown**. Auto-
 ## Install
 
 ```bash
-npm install search-engine-scraper
+npm install search-engine-parser
 ```
 
 ## Quick start
 
 ```typescript
-import { SearchEngineScraper } from "search-engine-scraper";
+import { SearchEngineParser } from "search-engine-parser";
 
-const scraper = new SearchEngineScraper();
+const scraper = new SearchEngineParser();
 
 // Auto-detect engine, returns JSON (default)
 const json = scraper.parse(html);
@@ -118,7 +118,7 @@ Learn how to scrape websites with Python...
 ### Access parsed data directly
 
 ```typescript
-import { detect, getParserForEngine } from "search-engine-scraper";
+import { detect, getParserForEngine } from "search-engine-parser";
 
 // Detect engine and get confidence score
 const detection = detect(html);
@@ -138,9 +138,9 @@ console.log(results.results.length);
 Implement the `BaseParser` interface:
 
 ```typescript
-import type { BaseParser } from "search-engine-scraper";
+import type { BaseParser } from "search-engine-parser";
 import type { CheerioAPI } from "cheerio";
-import type { SearchResults } from "search-engine-scraper";
+import type { SearchResults } from "search-engine-parser";
 import * as cheerio from "cheerio";
 
 class YandexParser implements BaseParser {

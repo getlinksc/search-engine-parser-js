@@ -1,5 +1,5 @@
 import {
-  SearchEngineScraper,
+  SearchEngineParser,
   detect,
   getParserForEngine,
   GoogleParser,
@@ -10,9 +10,9 @@ import {
 } from "../../src/index";
 
 describe("index exports", () => {
-  test("exports SearchEngineScraper", () => {
-    expect(SearchEngineScraper).toBeDefined();
-    expect(new SearchEngineScraper()).toBeDefined();
+  test("exports SearchEngineParser", () => {
+    expect(SearchEngineParser).toBeDefined();
+    expect(new SearchEngineParser()).toBeDefined();
   });
 
   test("exports detect", () => {
